@@ -2,9 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
 
 
@@ -27,7 +24,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :development do
+  gem 'rspec-rails','2.0.0.beta.18'
+end
+
 group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'rspec', '2.0.0.beta.18'
 end
